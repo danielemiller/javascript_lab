@@ -1,0 +1,76 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #6c5ce7; /* Fun purple background */
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    color: #333; /* Dark text for readability */
+}
+
+h1 {
+    color: #2d3436; /* Darker color for the heading */
+    margin-bottom: 20px;
+}
+
+input, button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: calc(100% - 30px); /* Full width with padding */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+input {
+    background-color: #f8f9fa;
+    margin-bottom: 10px; /* Space between input and button */
+}
+
+button {
+    cursor: pointer;
+    background-color: #00b894; /* Fresh green color for the button */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #00cec9; /* Change color on hover for interactivity */
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#pastGuesses {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #636e72; /* Slightly lighter color for past guesses */
+}
+
+@media (max-width: 480px) {
+    .game-container {
+        padding: 20px;
+    }
+
+    input, button {
+        width: calc(100% - 20px);
+    }
+}
